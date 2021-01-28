@@ -18,13 +18,13 @@ Do the following:
    HINT: no function required
 */
 const votingAge = 18;
-var = age;
-  if (votingAge > age) {
+var age = 23
+  if (votingAge => age) {
     console.log(true);
   } else {
     console.log(false);
   }
-console.log(age=10)
+console.log()
 
 /*
 Task 1b - Values
@@ -136,11 +136,11 @@ function hungryDog(age, weight){
       return (weight * .10);
     } else if (age => 1 && weight <= 5){
       return (weight * .05);
-    } else if (age > 1 && weight <= 10){
+    } else if (age => 1 && weight <= 10){
       return (weight * .04);
-    } else if (age > 1 && weight <= 15){
+    } else if (age => 1 && weight <= 15){
       return (weight * .03);
-    } else if (age > 1 && weight > 15){
+    } else if (age => 1 && weight > 15){
       return (weight * .02);
     }
   }
