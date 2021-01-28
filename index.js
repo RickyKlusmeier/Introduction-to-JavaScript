@@ -19,7 +19,7 @@ Do the following:
 */
 const votingAge = 18;
 var age = 23
-  if (votingAge => age) {
+  if (_votingAge => age) {
     console.log(true);
   } else {
     console.log(false);
@@ -126,21 +126,19 @@ Use the hungryDog function and feeding requirements below to do the following:
 */  
 
 function hungryDog(age, weight){
-    if (age>1){
-      age = (age/12)
-    } else if (age < 1 && age <= 8/12){
+    if (age < 1 && age <= 8/12){
       return (weight * .04);
-    } else if (age => 7/12 && age <= 5/12){
+    } else if (age >= 7/12 && age <= 5/12){
       return (weight * .05);
-    } else if (age => 4/12 && age <= 2/12){
+    } else if (age >= 4/12 && age <= 2/12){
       return (weight * .10);
-    } else if (age => 1 && weight <= 5){
+    } else if (age >= 1 && weight <= 5){
       return (weight * .05);
-    } else if (age => 1 && weight <= 10){
+    } else if (age >= 1 && weight <= 10){
       return (weight * .04);
-    } else if (age => 1 && weight <= 15){
+    } else if (age >= 1 && weight <= 15){
       return (weight * .03);
-    } else if (age => 1 && weight > 15){
+    } else if (age >= 1 && weight > 15){
       return (weight * .02);
     }
   }
@@ -170,9 +168,17 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    computer = Math.random();
-    if 
+    computer = Math.random()
+    if (computer >= 0.6667){
+       computer = "Rock";
+    } else if (computer >= 0.33334){
+       computer = "Paper";
+    } else if (computer >= 0){
+       computer = "scissors";
+    }
+    if user
 }
+console.log(game(Rock, ()))
   
   
 
