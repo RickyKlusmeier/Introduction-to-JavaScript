@@ -166,19 +166,40 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.floor(Math.random()*3);
+
+const user = prompt("Rock, Paper, Scissors?");
 
 function game(user, computer){
-    computer = Math.random()
-    if (computer >= 0.6667){
-       computer = "Rock";
-    } else if (computer >= 0.33334){
+    if (computer == 0){
+        computer = "Rock";
+    } else if (computer == 1){
        computer = "Paper";
-    } else if (computer >= 0){
-       computer = "scissors";
+    } else if(computer == 2){
+       computer = "Scissors";
     }
-    if user
+
+    if (user === "Rock" && computer === "Rock"){
+      return "it\'s a tie!"
+    } else if (user === "Rock" && computer === "Scissors"){
+      return "you win!"
+    } else if (user === "Rock" && computer === "Paper"){
+      return "you lose!"
+    } else if (user === "Paper" && computer === "Paper"){
+      return "it\'s a tie!"
+    } else if (user === "Paper" && computer === "Scissors"){
+      return "you win!"
+    } else if (user === "Paper" && computer === "Scissors"){
+      return "you lose!"
+    } else if (user === "Scissors" && computer === "Scissors"){
+      return "it\'s a tie!"
+    } else if (user === "Scissors" && computer === "Paper"){
+      return "you win!"
+    } else (user === "Scissors" && computer === "Rock");{
+      return "you lose!"
+    }
 }
-console.log(game(Rock, ()))
+console.log(game(user, computer));
   
   
 
@@ -224,10 +245,14 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(number){
+  let i = number;
+  while (i>0 , i-1){
+  let numberLeftOver = i-1;
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around  ${numberLeftOver} bottles of soda on the wall`;
   }
-
+}
+  console.log(annoyingSong(99))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
