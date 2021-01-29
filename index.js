@@ -247,9 +247,10 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(number){
   let i = number;
-  while (i>0 , i-1){
+  while (i > 0){
   let numberLeftOver = i-1;
-    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around  ${numberLeftOver} bottles of soda on the wall`;
+    console.log( `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around  ${numberLeftOver} bottles of soda on the wall`);
+    i--
   }
 }
   console.log(annoyingSong(99))
@@ -298,8 +299,8 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(input) {
+    
 }
 
 
