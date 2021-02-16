@@ -168,7 +168,7 @@ Use the game function below to do the following:
 */
 let computer = Math.floor(Math.random()*3);
 
-const user = prompt("Rock, Paper, Scissors?");
+// const user = prompt("Rock, Paper, Scissors?");
 
 function game(user, computer){
     if (computer == 0){
@@ -199,7 +199,7 @@ function game(user, computer){
       return "you lose!"
     }
 }
-console.log(game(user, computer));
+console.log(game("Rock", "Scissors"));
   
   
 
@@ -215,7 +215,7 @@ Using the miles function below do the following:
 */
 
 function miles(km){
-    return = ( km * 0.621371);
+    return ( km * 0.621371);
   }
 console.log(miles(13));
 
@@ -280,7 +280,7 @@ function grade(gradeNumber){
   } else if (gradeNumber >= 60){
     return ("you got a D");
   } else if (gradeNumber >= 50){
-    return ("you got a F");
+    return ("you got an F");
   }
   }
   console.log(grade(93))
