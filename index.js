@@ -180,22 +180,22 @@ function game(user, computer){
     }
 
     if (user === "Rock" && computer === "Rock"){
-      return "it\'s a tie!"
+      return "it\'s a tie!";
     } else if (user === "Rock" && computer === "Scissors"){
-      return "you win!"
+      return "you win!";
     } else if (user === "Rock" && computer === "Paper"){
-      return "you lose!"
+      return "you lose!";
     } else if (user === "Paper" && computer === "Paper"){
-      return "it\'s a tie!"
+      return "it\'s a tie!";
     } else if (user === "Paper" && computer === "Scissors"){
-      return "you win!"
-    } else if (user === "Paper" && computer === "Scissors"){
-      return "you lose!"
+      return "you lose!";
+    } else if (user === "Paper" && computer === "Rock"){
+      return "you win!";
     } else if (user === "Scissors" && computer === "Scissors"){
-      return "it\'s a tie!"
+      return "it\'s a tie!";
     } else if (user === "Scissors" && computer === "Paper"){
-      return "you win!"
-    } else (user === "Scissors" && computer === "Rock");{
+      return "you win!";
+    } else {
       return "you lose!"
     }
 }
@@ -230,7 +230,7 @@ Using the feet function below do the following:
 
 function feet(cm){
     /*add your code here*/
-    return (cm * 0.0328084);
+    return (cm / 30.48);
   }
  console.log(feet(120));
 
